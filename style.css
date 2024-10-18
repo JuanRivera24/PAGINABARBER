@@ -11,11 +11,11 @@ body{
     font-family: Arial;
 }
 
-.header{
+.head{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgb(10, 10, 100);
+    background-color: rgb(0, 0, 78);
     height: 100px;
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@ body{
 }
 
 .logo{
-    margin: 30px;
+    margin: 50px;
 }
 
 .navbar{
@@ -43,10 +43,106 @@ body{
 }
 
 
+.nosotros{
+    display: flex;
+    background: url(Fondobarberia1.jpg) center;
+    background-size: cover;
+    height: 80vh !important;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-attachment: fixed;
+}
 
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
 
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
 
+.btn a{
+    display: flex;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
 
+.content{
+    display: flex;
+    flex-direction: column;
+}
 
+.tienda{
+    background: #1f1f1f;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
 
+.tiposdecorte{
+    display: flex;
+    background-attachment: fixed;
+    background-image: url(Fondobarberia1.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
 
+.tiposdecorte img{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 200px;
+}
+
+.mapa{
+    display: flex;
+}
+
+.contacto{
+    display: flex;
+    background: #1f1f1f;
+    padding: 30px;
+    align-items:center;
+}
+
+.tabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tabla .sede{
+    flex-direction: column;
+    border: #ffffff 2px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.tabla .sede a{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.tabla .sede:hover{
+    background: #ffffff10;
+}
+
+.final{
+    background-color: rgb(0, 0, 78) ;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+}
