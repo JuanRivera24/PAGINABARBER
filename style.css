@@ -1,105 +1,148 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #000000a9, #000000b7);
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
+    font-size: 100%;
+    vertical-align: baseline;
     margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.encabezado{
+body{
+    text-align: center;
+    font-family: Arial;
+}
+
+.head{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 78);
+    height: 100px;
     position: fixed;
     width: 100%;
-    background-color: #073a70;
-    top: 0px;
+    z-index: 100;
 }
 
-.box1{
-    background-image: url('https://scontent.feoh6-1.fna.fbcdn.net/v/t39.30808-6/304978113_465599862248835_3141642125761671058_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=CmrzFb5vregQ7kNvgG0SAjq&_nc_zt=23&_nc_ht=scontent.feoh6-1.fna&_nc_gid=AcAN7x9E9cx0HJYTjygAAbD&oh=00_AYBNMf_w5g2Kc19fsuHTWOAwqHBXfzrkC3so9ueDYjA9Zg&oe=671473ED');
-    top: 0px;
-    height: 100%;
+.logo{
+    margin: 50px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 18px;
+    display: block;
+    padding: 40px;
+    padding-block: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:hover{
+    background: rgba(86, 86, 180, 0.308);
+}
+
+
+.nosotros{
+    display: flex;
+    background: url(Fondobarberia1.jpg) center;
+    background-size: cover;
+    height: 80vh !important;
     justify-content: center;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-}
-
-}
-
-.box2{
-    
-    text-align: center;
-    font-size: 30px;
-    top: 150px;
-    color: antiquewhite;
-}
-
-.box3{ background-color: #000000a9;
-    height: 100%;
-    width: 100%;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-
-}
-
-.login-container {
-    background: linear-gradient(135deg, #dfdfdf, #ff0000);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
+    background-attachment: fixed;
 }
 
-h2 {
-    margin-bottom: 50px;
-    color: #333;
-    
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
 }
 
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border 0.3s;
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
-    border: 1px solid #007BFF;
-    outline: none;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: hwb(257 18% 75% / 0.356);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-.footer {
+.btn a{
+    display: flex;
     margin-top: 15px;
-    font-size: 14px;
-    color: #777;
+    color: rgb(255, 255, 255);
 }
 
-.footer a {
-color: hwb(0 0% 100%);
-    text-decoration: none;
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.tienda{
+    background: #1f1f1f;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiposdecorte{
+    display: flex;
+    background-attachment: fixed;
+    background-image: url(Fondobarberia1.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+.tiposdecorte img{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 200px;
+}
+
+.mapa{
+    display: flex;
+}
+
+.contacto{
+    display: flex;
+    background: #1f1f1f;
+    padding: 30px;
+    align-items:center;
+}
+
+.tabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tabla .sede{
+    flex-direction: column;
+    border: #ffffff 2px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.tabla .sede a{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.tabla .sede:hover{
+    background: #ffffff10;
+}
+
+.final{
+    background-color: rgb(0, 0, 78) ;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
 }
