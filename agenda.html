@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inicio de sesión</title>
+    <title>Agenda</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="agenda.css"> <!-- Vincula el nuevo CSS para la agenda -->
 </head>
 
 <body>
@@ -15,40 +15,26 @@
             <a href="index.html"><img src="Logo barber.png" alt="Logo" width="90"></a>
         </div>
         <nav class="navbar">
-            <a href="agenda.html">Agenda</a>
+            <a href="nosotros.html">Agenda</a>
             <a href="tienda.html">Tienda</a>
             <a href="cedes.html">Sedes</a>
             <a href="iniciosesion.html"><img src="logoiniciosesion.png" alt="Inicio de sesión" width="30px" height="30px"></a>
         </nav>
     </div>
-    
-    <div class="wrapper iniciosesion">
-        <form action="#">
-            <h2>Bienvenido</h2>
-            <div class="input-field">
-                <input type="text" required>
-                <label>Ingresa tu Email</label>
-            </div>
-            <div class="input-field">
-                <input type="password" required>
-                <label>Ingresa tu contraseña</label>
-            </div>
-            <div class="forget">
-                <label for="remember">
-                    <input type="checkbox" id="remember">
-                    <p>Recordarme</p>
-                </label>
-                <a href="#">Olvidé mi contraseña</a>
-            </div>
-            <button type="submit">Ingresar</button>
-            <div class="Registrarse">
-                <p>¿No tienes cuenta?</p>
-                <a href="registro.html">Registrarse</a> <!-- Cambié aquí el enlace -->
-            </div>
-        </form>
+
+    <div class="wrapper agenda">
+        <h2>Agenda de Servicios</h2>
+        <p>Aquí puedes encontrar nuestra oferta de servicios y agendar tu cita:</p>
+        <ul>
+            <li>Corte de cabello</li>
+            <li>Afeitado</li>
+            <li>Arreglo de barba</li>
+            <li>Tratamientos capilares</li>
+            <li>Estilo de peinado personalizado</li>
+        </ul>
     </div>
 
-    <section class="content contacto" style="margin-top: 80px;"> <!-- Espacio agregado aquí -->
+    <section class="content contacto">
         <h2 class="title">Contacto</h2>
         <article class="tabla">
             <div class="tabla sede">Sede Bello
@@ -65,7 +51,7 @@
             </div>
         </article>
     </section>
-    
+
     <footer class="final">
         <h3>©2024 KINGDOM BARBER® - Todos los derechos reservados</h3>
     </footer>
