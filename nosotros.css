@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(Fondobarberia1.jpg) center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.content h2.title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.creadores {
+    background-color: black; /* Fondo negro para la sección de creadores */
+    padding: 40px 0; /* Espaciado superior e inferior */
+}
+
+.tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tabla.sede {
+    width: 200px; /* Ancho del cuadro */
+    margin: 15px; /* Espaciado entre cuadros */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido para los bloques */
+    border-radius: 8px;
+    border: 1px solid #ffffff80;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    transition: background-color 0.3s; /* Efecto de transición */
+    color: white; /* Texto en blanco */
+}
+
+.tabla.sede:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Mantener un fondo claro al pasar el ratón */
+}
+
+.tabla.sede img {
+    width: 100px; /* Ajustar el tamaño de la imagen */
+    margin-bottom: 10px;
+}
+
+.final {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
