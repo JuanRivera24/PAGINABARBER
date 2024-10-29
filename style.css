@@ -115,10 +115,8 @@ p {
     align-items: center;
 }
 
-.tabla {
+.tabla{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .tabla .sede {
