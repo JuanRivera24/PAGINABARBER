@@ -1,0 +1,83 @@
+body {
+    margin: 0; /* Eliminar margen predeterminado del body */
+    overflow: hidden; /* Evitar el desplazamiento de fondo */
+}
+
+.head {
+    position: fixed; /* Mantener la barra de navegación en la parte superior */
+    top: 0; /* Asegurar que esté en la parte superior */
+    left: 0; /* Asegurar que esté alineada a la izquierda */
+    right: 0; /* Asegurar que esté alineada a la derecha */
+    z-index: 100; /* Mantener la barra encima del resto del contenido */
+    background-color: rgba(0, 0, 139, 0.6); /* Fondo semitransparente */
+}
+
+.wrapper.cedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px; /* Espacio arriba para evitar superposición con la barra de navegación */
+    color: rgb(0, 0, 0); /* Color de texto negro */
+    position: relative; /* Necesario para el pseudo-elemento */
+    z-index: 1; /* Mantener el contenido encima del fondo */
+}
+
+.wrapper.cedes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(Fondobarberia1.jpg) center; /* Imagen de fondo */
+    background-size: cover;
+    opacity: 0.6; /* Ajustar la opacidad aquí */
+    z-index: -1; /* Colocar detrás del contenido */
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(0, 0, 0); /* Título en negro */
+}
+
+.tabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px; /* Añadir margen superior */
+}
+
+.tabla .sede {
+    flex-direction: column;
+    border: #000000 2px solid; /* Cambiar borde a negro */
+    border-radius: 20px;
+    font-size: 20px;
+    color: #000000; /* Texto en negro */
+    padding: 20px;
+    margin: 10px; /* Añadir margen entre las cedes */
+}
+
+.tabla .sede a {
+    color: #000000; /* Enlaces en negro */
+    font-size: 17px;
+}
+
+.tabla .sede:hover {
+    background: #00000010; /* Fondo al pasar el ratón en negro */
+}
+
+.final {
+    background-color: rgb(0, 0, 78);
+    position: relative; /* Asegurar que el footer se mantenga al final */
+    width: 100%; /* Asegurar que el footer ocupe el ancho completo */
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0; /* Eliminar margen predeterminado */
+}
