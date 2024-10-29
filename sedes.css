@@ -12,7 +12,7 @@ body {
     background-color: rgba(0, 0, 139, 0.6); /* Fondo semitransparente */
 }
 
-.wrapper.cedes {
+.wrapper.sedes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
     z-index: 1; /* Mantener el contenido encima del fondo */
 }
 
-.wrapper.cedes::before {
+.wrapper.sedes::before {
     content: "";
     position: absolute;
     top: 0;
