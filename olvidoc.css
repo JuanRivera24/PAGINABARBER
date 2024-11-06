@@ -1,0 +1,49 @@
+/* Ajustes específicos para la sección de recuperación de contraseña */
+.wrapper.recuperar-contraseña {
+    margin-top: 100px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    border: 1px solid #ffffff80;
+    text-align: center;
+}
+
+.wrapper.recuperar-contraseña p {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.back-to-login a {
+    display: block;
+    margin-top: 15px;
+    color: #efefef;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+button {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #efefef;
+}
+
+@media (max-width: 600px) {
+    .wrapper.recuperar-contraseña {
+        width: 100%;
+        padding: 20px;
+    }
+}
