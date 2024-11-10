@@ -11,15 +11,16 @@ body {
     font-family: Arial;
 }
 
+
 .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 139, 0.863); /* Ajustado la opacidad a 0.6 */
+    background-color: rgb(0, 0, 100); /* Ajustado la opacidad a 0.6 */
     height: 90px; /* Altura de la barra de navegación */
-    position: fixed;
+    position: fixed; /* Para que quede quieto arriba */
     width: 100%;
-    z-index: 100;
+    z-index: 100; /* Entre mas alto el numero mas importante es, es decir, va primero frente a todo */
 }
 
 .logo {
@@ -34,22 +35,38 @@ body {
     font-size: 18px;
     align-items: center;
     display: flex;
-    padding: 30px 40px; /* Ajustado el padding */
+    padding: 16px 40px; /* Ajustado el padding */
     color: rgb(255, 255, 255);
     transition: background 0.3s; /* Transición suave para el hover */
 }
 
 .navbar a:hover {
-    background: rgba(86, 86, 180, 0.377); /* Transparencia para el hover */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    background: rgba(86, 86, 180, 0.233); /* Transparencia para el hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11); 
     align-items: center;
+    transform: scale(1.1);
+}
+
+.redessociales{
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+}
+
+.redessociales img{
+    padding: 8px;
+}
+
+.redessociales img:hover{
+    transform: scale(1.1);
 }
 
 .nosotros {
     display: flex;
     background: url(Fondobarberia1.jpg) center;
     background-size: cover;
-    min-height: 80vh !important;
+    min-height: 90vh !important;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -57,7 +74,7 @@ body {
 }
 
 .title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 60px;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -69,23 +86,18 @@ p {
     color: rgb(255, 255, 255);
 }
 
-.btn a {
-    display: flex;
-    margin-top: 15px;
-    color: rgb(255, 255, 255);
-}
-
 .content {
     display: flex;
     flex-direction: column;
 }
 
 .tienda {
-    background: #1f1f1f;
-    padding: 30px;
+    background: #1f1f1f49;
+    padding: 50px;
     justify-content: center;
     align-items: center;
 }
+
 
 .tiposdecorte {
     display: flex;
@@ -93,15 +105,6 @@ p {
     background-image: url(Fondobarberia1.jpg);
     background-size: cover;
     justify-content: center;
-    align-items: center;
-    padding: 5vh;
-}
-
-.tiposdecorte img {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    height: 200px;
 }
 
 .mapa {
@@ -111,34 +114,25 @@ p {
 .contacto {
     display: flex;
     background: #1f1f1f;
-    padding: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.sedes {
+    background: #1f1f1f49;
+    padding: 50px;
+    justify-content: center;
     align-items: center;
 }
 
 .tabla{
     display: flex;
+    margin: 20px;
+    justify-content: space-around;
 }
 
-.tabla .sede {
-    flex-direction: column;
-    border: #ffffff 2px solid;
-    border-radius: 20px;
-    font-size: 20px;
+.footer {
     color: #ffffff;
-    padding: 20px;
-}
-
-.tabla .sede a {
-    color: #ffffff;
-    font-size: 17px;
-}
-
-.tabla .sede:hover {
-    background: #ffffff10;
-}
-
-.final {
-    background-color: rgb(0, 0, 78);
 }
 
 h3 {
@@ -147,6 +141,37 @@ h3 {
     padding: 10px;
 }
 
-.content.contacto {
-    margin-top: 5vh; /* Cambia el 50px por un valor dinámico */
+.contenedor {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 300px; 
+    margin: 10px; 
+    border: 1px solid #414141; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.459); 
+}
+
+.tarjeta img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.459); 
+}
+
+.tarjeta h3 {
+    color: #1f1f1f;
+    margin-top: 10px; 
+}
+
+.tarjeta p {
+    color: #1f1f1f;
+    font-size: 0.9em; 
+    line-height: 1.5; 
 }
