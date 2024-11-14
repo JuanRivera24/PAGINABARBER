@@ -62,17 +62,6 @@ body {
     transform: scale(1.1);
 }
 
-.nosotros {
-    display: flex;
-    background: url(Fondobarberia1.jpg) center;
-    background-size: cover;
-    min-height: 90vh !important;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-attachment: fixed;
-}
-
 .title {
     margin-bottom: 20px;
     font-size: 60px;
@@ -91,45 +80,6 @@ p {
     flex-direction: column;
 }
 
-.tienda {
-    background: #1f1f1f49;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.tiposdecorte {
-    display: flex;
-    background-attachment: fixed;
-    background-image: url(Fondobarberia1.jpg);
-    background-size: cover;
-    justify-content: center;
-}
-
-.mapa {
-    display: flex;
-}
-
-.contacto {
-    display: flex;
-    background: #1f1f1f;
-    padding: 20px;
-    align-items: center;
-}
-
-.sedes {
-    background: #1f1f1f49;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.tabla{
-    display: flex;
-    margin: 20px;
-    justify-content: space-around;
-}
 
 .footer {
     color: #ffffff;
@@ -149,12 +99,12 @@ h3 {
 }
 
 .tarjeta {
-    width: 300px; 
+    width: 400px; 
     margin: 10px; 
-    border: 1px solid #414141; 
+    border: 1px solid #ffffff; 
     padding: 20px; 
     border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.459); 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.459); 
 }
 
 .tarjeta img {
@@ -166,12 +116,12 @@ h3 {
 }
 
 .tarjeta h3 {
-    color: #1f1f1f;
+    color: #ffffff;
     margin-top: 10px; 
 }
 
 .tarjeta p {
-    color: #1f1f1f;
+    color: #ffffff;
     font-size: 0.9em; 
     line-height: 1.5; 
 }

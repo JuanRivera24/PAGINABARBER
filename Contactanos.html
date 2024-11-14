@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbería</title>
+    <link rel="stylesheet" href="Contactanos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Barra superior de inicio -->
+    <div class="head">
+        <div class="logo max-w-xs transition duration-150 ease-in-out hover:scale-105">
+            <a href="index.html"><img src="Logo barber.png" alt="Logo" width="70"
+                    class="flex items-center space-x-3 rtl:space-x-reverse"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="agenda.html" class="flex items-center space-x-3 rtl:space-x-reverse">Agenda</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="sedes.html">Sedes</a>
+            <a href="Contactanos.html">Contactanos</a>
+            <a href="iniciosesion.html"><img src="logoiniciosesion.png" alt="Inicio de sesión" width="30px"
+                    height="30px"></a>
+        </nav>
+
+        <!-- Logos redes sociales -->
+    </div>
+    <div class="redessociales">
+        <a href="#">
+            <img src="logowpp.png" alt="Github" width="50px">
+        </a>
+        <a href="#">
+            <img src="logoigg.png" alt="Instagram" width="50px">
+        </a>
+        <a href="https://github.com/JuanRivera24/PAGINABARBER">
+            <img src="logogit.png" alt="Whatsapp" width="50px">
+        </a>
+    </div>
+
+    <!-- Contenido Contactanos -->
+    <section class="content contactanos">
+        <div class="relative h-[700px] overflow-hidden bg-[url('fondobarberia1.jpg')] bg-cover bg-[50%] bg-no-repeat">
+            <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/80 bg-fixed flex items-center justify-center">
+                <div class="contenedor">
+                    <div class="tarjeta">
+                        <img src="https://propiedades.com.co/wp-content/uploads/2021/05/OPTIMIZADA1-1.jpg"
+                            alt="Huracan">
+                        <h3>Sede Fabricato</h3>
+                        <p>Nuestra sede principal se encuentra ubicada en la Carrea 50 #38a-185, si deseas
+                            conversar con esta sede puedes ingresar al siguiente enlace: <a
+                                href="#">https://wa.me/123.</a></p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://eltesoro.com.co/wp-content/uploads/2020/12/1220-nota-editorial-navidad-el-tesoro-01.jpg"
+                            alt="Tornado">
+                        <h3>Sede El Tesoro</h3>
+                        <p>Nuestra nueva sede esta ubicada en la transversal superior carrera 25A # 1A Sur - 45,
+                            donde tambien puedes conversar ingresando al siguiente enlace: <a
+                                href="#">https://wa.me/123.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formulario Escribenos -->
+        <main class="contactanos bg-gray-300">
+            <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
+                <div class="w-full pl-2 pr-2 mb-4 mt-4">
+                    <h1 class="text-3xl font-extrabold text-center  bg-gray-300"> Escribenos </h1>
+                </div>
+            </div>
+            <div class="container ml-auto mr-auto flex items-center justify-center">
+                <div class="w-full md:w-1/2">
+
+                    <!-- Formulario -->
+                    <form class=" bg-gray-300 px-8 pt-6 pb-8 mb-4">
+                        <div class="mb-4">
+                            <div class="grid grid-flow-row sm:grid-flow-col gap-3">
+                                <div class="sm:col-span-4 justify-center">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nya"> Nombres
+                                        y Apellidos </label>
+                                    <input
+                                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="nya" type="text" placeholder="Nombre y apellido" required>
+                                </div>
+                                <div class="sm:col-span-4 justify-center">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email"> Correo
+                                        electronico
+                                    </label>
+                                    <input
+                                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="email" type="email" placeholder="correo@mail.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="asunto"> Asunto
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="asunto" type="text" placeholder="Asunto de contacto" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="mensaje"> Mensaje
+                            </label>
+                            <textarea
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                type="submit"> Enviar </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!--Seccion de derechos de autor-->
+    <footer>
+        <div class="w-full bg-blue-950 p-4 text-center footer">
+            © 2024 Copyright: Kingdom barber
+        </div>
+    </footer>
+</body>
+
+</html>
