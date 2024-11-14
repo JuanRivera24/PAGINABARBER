@@ -77,13 +77,13 @@ body {
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: rgb(124, 10, 255);
 }
 
 p {
     margin-bottom: 40px;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: rgb(167, 30, 30);
 }
 
 .content {
@@ -96,6 +96,17 @@ p {
     padding: 50px;
     justify-content: center;
     align-items: center;
+}
+/* .info h1 {
+    background-color: aqua;
+}
+
+.info p {
+    background-color: aqua;
+} */
+
+.content1 {
+    background-color: #272727fd;
 }
 
 
@@ -148,7 +159,7 @@ h3 {
     padding: 20px;
 }
 
-.tarjeta {
+.tarjeta { 
     width: 300px; 
     margin: 10px; 
     border: 1px solid #414141; 
